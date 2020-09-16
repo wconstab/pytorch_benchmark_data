@@ -1,0 +1,146 @@
+{
+    "machine_info": {
+        "node": "ip-172-16-91-56",
+        "processor": "x86_64",
+        "machine": "x86_64",
+        "python_compiler": "GCC 7.3.0",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.7.7",
+        "python_version": "3.7.7",
+        "python_build": [
+            "default",
+            "May  7 2020 21:25:33"
+        ],
+        "release": "4.4.0-1077-aws",
+        "system": "Linux",
+        "cpu": {
+            "vendor_id": "unknown",
+            "hardware": "unknown",
+            "brand": "unknown"
+        }
+    },
+    "commit_info": {
+        "id": "07b1b3c1a384809d7fb890e8627ce8a2a977b1c3",
+        "time": "2020-09-15T17:50:14-07:00",
+        "author_time": "2020-09-15T17:50:14-07:00",
+        "dirty": false,
+        "project": "benchmark",
+        "branch": "wconstab/archive-compare"
+    },
+    "benchmarks": [
+        {
+            "group": "hub",
+            "name": "test_train[BERT_pytorch-cpu-jit]",
+            "fullname": "test_bench.py::TestBenchNetwork::test_train[BERT_pytorch-cpu-jit]",
+            "params": {
+                "model": [
+                    "UNSERIALIZABLE[<class 'torchbenchmark.models.BERT_pytorch.Model'>]",
+                    "/home/circleci/project/torchbenchmark/models/BERT_pytorch"
+                ],
+                "device": "cpu",
+                "compiler": "jit"
+            },
+            "param": "BERT_pytorch-cpu-jit",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "cuda_timer",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 3
+            },
+            "stats": {
+                "min": 0.30787461799991434,
+                "max": 0.31044850800026325,
+                "mean": 0.30938341220007715,
+                "stddev": 0.0009825588133499138,
+                "rounds": 5,
+                "median": 0.30928821299994524,
+                "iqr": 0.0012210505000211924,
+                "q1": 0.3089195112501102,
+                "q3": 0.3101405617501314,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.30787461799991434,
+                "hd15iqr": 0.31044850800026325,
+                "ops": 3.232235344774411,
+                "total": 1.5469170610003857,
+                "data": [
+                    0.30787461799991434,
+                    0.30928821299994524,
+                    0.31003791300008743,
+                    0.3092678090001755,
+                    0.31044850800026325
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "hub",
+            "name": "test_eval[BERT_pytorch-cpu-jit]",
+            "fullname": "test_bench.py::TestBenchNetwork::test_eval[BERT_pytorch-cpu-jit]",
+            "params": {
+                "model": [
+                    "UNSERIALIZABLE[<class 'torchbenchmark.models.BERT_pytorch.Model'>]",
+                    "/home/circleci/project/torchbenchmark/models/BERT_pytorch"
+                ],
+                "device": "cpu",
+                "compiler": "jit"
+            },
+            "param": "BERT_pytorch-cpu-jit",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "cuda_timer",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 3
+            },
+            "stats": {
+                "min": 0.05315221799992287,
+                "max": 0.05378684600009365,
+                "mean": 0.05336288489477164,
+                "stddev": 0.0001575665022458213,
+                "rounds": 19,
+                "median": 0.05333018200008155,
+                "iqr": 0.0002124057501760035,
+                "q1": 0.053247372750092836,
+                "q3": 0.05345977850026884,
+                "iqr_outliers": 1,
+                "stddev_outliers": 6,
+                "outliers": "6;1",
+                "ld15iqr": 0.05315221799992287,
+                "hd15iqr": 0.05378684600009365,
+                "ops": 18.739616532575763,
+                "total": 1.013894813000661,
+                "data": [
+                    0.05328685200038308,
+                    0.05331465599965668,
+                    0.05315221799992287,
+                    0.05354892099967401,
+                    0.053378157999759424,
+                    0.053476096000395046,
+                    0.05350656700011314,
+                    0.05331197900022744,
+                    0.05338922200007801,
+                    0.05333018200008155,
+                    0.053365018000022246,
+                    0.05323421299999609,
+                    0.05317246699996758,
+                    0.05378684600009365,
+                    0.05321491199993034,
+                    0.05318449300011707,
+                    0.05341082599989022,
+                    0.053533080000306654,
+                    0.053298107000046
+                ],
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2020-09-16T01:02:15.892548",
+    "version": "3.2.3"
+}
